@@ -1,15 +1,57 @@
-* {
-	background: #5f7694;
+body {
+	font-family: monospace;
+	font-size: 18px;
+
+	background: linear-gradient(42deg, #45dfb7, #d7aeff);
+	background-size: 400% 400%;
+
+	-webkit-animation: AnimationName 16s ease infinite;
+	-moz-animation: AnimationName 16s ease infinite;
+	animation: AnimationName 16s ease infinite;
+
+	@-webkit-keyframes AnimationName {
+		0% {
+			background-position: 43% 0%;
+		}
+		50% {
+			background-position: 58% 100%;
+		}
+		100% {
+			background-position: 43% 0%;
+		}
+	}
+	@-moz-keyframes AnimationName {
+		0% {
+			background-position: 43% 0%;
+		}
+		50% {
+			background-position: 58% 100%;
+		}
+		100% {
+			background-position: 43% 0%;
+		}
+	}
+	@keyframes AnimationName {
+		0% {
+			background-position: 43% 0%;
+		}
+		50% {
+			background-position: 58% 100%;
+		}
+		100% {
+			background-position: 43% 0%;
+		}
+	}
 }
 .hide {
 	display: none;
 }
-label input{
-  height: 20px;
-  width: 20px;
+label input {
+	height: 20px;
+	width: 20px;
 }
 input {
-	background-color: #fff;
+	background-color: #7be94dc7;
 	width: 150px;
 	height: 30px;
 	border-radius: 5px;
@@ -24,24 +66,46 @@ select {
 	height: 67px;
 	font-size: 30px;
 	padding: 15px;
+	margin-top: 95px;
 }
-#calculate {
+.container {
+	display: flex;
+}
 
-	background-color: rgba(78, 180, 78, 0.473);
+.buttons {
+	margin-top: 15px;
+}
+
+#calculate {
+	background-color: rgba(56, 240, 56, 0.822);
+	border-radius: 5px;
+	height: 35px;
 }
 .del {
-	margin: 0 5px 15px 150px;
 	background-color: rgba(180, 78, 78, 0.473);
-}
-res, det {
-	background-color: darkolivegreen;
 	border-radius: 5px;
-	color: rgb(244, 255, 87);
-	padding: 5px;
-  text-align: center;
-  line-height: 30px;
+	height: 35px;
 }
 
-det {
-  color: rgba(159, 255, 223, 0.856);
+.clear {
+  background-color: rgba(214, 245, 41, 0.473);
+	border-radius: 5px;
+  height: 35px;
+  margin-top: 15px;
+}
+res p {
+	padding: 10px 15px;
+	background-color: rgb(24, 81, 155);
+	color: rgb(255, 255, 255);
+	text-align: center;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+
+p label {
+	margin: 15px;
+}
+#result {
+	padding: 10px;
+	border-radius: 5px;
 }
