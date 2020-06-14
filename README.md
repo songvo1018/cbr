@@ -1,4 +1,4 @@
-# cbr
+# Calculator Blank Ring
 App for calculating the length of the preparation of wedding rings
 
 
